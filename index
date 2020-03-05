@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+    <style>
+        input {
+            width: 300px;
+        }
+        
+        fieldset {
+            width: 320px;
+        }
+        
+        legend {
+            color: red;
+        }
+        
+        font {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生档案</h1>
+    <fieldset>
+        <legend>学生档案</legend>
+        <form id="testform" method="get" action="#S">
+            姓名：
+            <br/><input type="text" name="name" required="true" placeholder="请输入姓名" autocomplete="on" />
+            <font>*</font>
+            <br/> 学号：
+            <br/><input type="number
+            " name="snumber" required="true" placeholder="请输入学号" autocomplete="on" />
+            <font>*</font>
+            <br/> 手机号：
+            <br/><input type="tel
+            " name="tel" required="true" placeholder="请输入手机号" autocomplete="on" />
+            <font>*</font>
+            <br/> 邮箱地址：
+            <br/><input type="email
+            " name="email" required="true" placeholder="请输入邮箱地址" autocomplete="on" />
+            <font>*</font>
+            <br/> 录取学校：
+            <br>
+            <input type="text" list="schoolname">
+            <datalist id="schoolname">
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>河北大学</option>
+            </datalist>
+            <br> 入学成绩：
+            <br/><input type="number
+            " name="cj" required="true" autocomplete="on" />
+            <br/> 入学时间：
+            <br>
+            <input type="date" name="toscdata">
+            <br>
+            <br/>
+            <input type="submit" value="提交" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
